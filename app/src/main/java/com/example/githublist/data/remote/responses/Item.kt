@@ -57,7 +57,7 @@ data class Item(
     val open_issues: Int,
     val open_issues_count: Int,
     val owner: Owner,
-    val `private`: Boolean,
+    val private: Boolean,
     val pulls_url: String,
     val pushed_at: String,
     val releases_url: String,
