@@ -11,7 +11,7 @@ android {
     defaultConfig {
         applicationId "com.example.githubList"
         minSdk 21
-        targetSdk 30
+        targetSdk 31
         versionCode 1
         versionName "1.0"
 
@@ -83,10 +83,6 @@ dependencies {
     // Coil
     implementation "io.coil-kt:coil:1.1.1"
     implementation "com.google.accompanist:accompanist-coil:0.7.0"
-
-    //Paging
-    implementation "androidx.paging:paging-runtime:$paging_version"
-    implementation "androidx.paging:paging-compose:1.0.0-alpha14"
 
     //Dagger - Hilt
     implementation "com.google.dagger:hilt-android:2.33-beta"
