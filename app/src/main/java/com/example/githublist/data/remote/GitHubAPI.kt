@@ -1,6 +1,6 @@
-package com.example.githublist.remote
+package com.example.githublist.data.remote
 
-import com.example.githublist.remote.responses.Models
+import com.example.githublist.data.remote.responses.Models
 import retrofit2.http.GET
 import retrofit2.http.Query
 

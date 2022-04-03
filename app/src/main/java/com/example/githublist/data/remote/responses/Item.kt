@@ -1,4 +1,4 @@
-package com.example.githublist.remote.responses
+package com.example.githublist.data.remote.responses
 
 data class Item(
     val allow_forking: Boolean,
