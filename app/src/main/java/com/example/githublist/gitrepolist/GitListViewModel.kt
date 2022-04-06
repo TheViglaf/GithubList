@@ -30,7 +30,7 @@ class GitListViewModel @Inject constructor(
     fun loadGitListPaginated() {
         viewModelScope.launch {
             isLoading.value = true
-            val result = repository.getGitRepoList(page = 1, queryParams = "kotlin", sort = "stars")
+            val result = repository.getGitRepoList(queryParams = "kotlin", sort = "stars",page = 1)
             when (result) {
                 is Resource.Sucess -> {
                     endReached.value = curPage * PAGE_SIZE >= result.data!!.total_count

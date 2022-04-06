@@ -23,6 +23,8 @@ import androidx.hilt.navigation.compose.hiltNavGraphViewModel
 import androidx.navigation.NavController
 import coil.request.ImageRequest
 import com.example.githublist.data.models.GitHubListEntry
+import com.example.githublist.data.remote.responses.Models
+import com.example.githublist.utils.Constants.BASE_URL
 import com.google.accompanist.coil.CoilImage
 
 @Composable
@@ -117,7 +119,7 @@ fun GitListEntry(
         Column {
             CoilImage(
                 request = ImageRequest.Builder(LocalContext.current)
-                    .data(entry.imageURL)
+                    .data("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png")
                     .target {
                     }
                     .build(),
